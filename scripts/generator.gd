@@ -5,14 +5,14 @@ extends Node
 # var a = 2
 # var b = "text"
 var test_set1 = preload("res://set_scenes/forest_set.tscn")
-var test_set2 = preload("res://set_scenes/forest_set.tscn")
+var test_set2 = preload("res://set_scenes/swing_set.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
 
 func trigger_generation(position):
 	var x
-	if(randi()%2==0):
+	if(randf()<0.5):
 		x = test_set1.instance()
 	else:
 		x = test_set2.instance()

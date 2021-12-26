@@ -8,7 +8,7 @@ radius = 16.0
 height = 52.0
 
 [sub_resource type="CircleShape2D" id=2]
-radius = 177.102
+radius = 407.079
 
 [sub_resource type="AnimationNodeAnimation" id=4]
 animation = "run"
