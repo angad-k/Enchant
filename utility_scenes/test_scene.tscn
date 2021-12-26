@@ -1,8 +1,13 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://utility_scenes/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://parallax/parallax-02.png" type="Texture" id=2]
 [ext_resource path="res://utility_scenes/world.gd" type="Script" id=3]
 [ext_resource path="res://set_scenes/test_set1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://parallax/parallax-03.png" type="Texture" id=5]
+[ext_resource path="res://parallax/parallax-00.png" type="Texture" id=6]
+[ext_resource path="res://parallax/parallax-01.png" type="Texture" id=7]
+[ext_resource path="res://parallax/parallax-04.png" type="Texture" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 966.5, 18 )
@@ -10,10 +15,45 @@ extents = Vector2( 966.5, 18 )
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
 
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+offset = Vector2( 0, -80 )
+transform = Transform2D( 1, 0, 0, 1, 0, -80 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 1, 0 )
+motion_mirroring = Vector2( 1440, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource( 6 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0, 0 )
+motion_mirroring = Vector2( 1440, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+texture = ExtResource( 7 )
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.1, 0 )
+motion_mirroring = Vector2( 1440, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
+texture = ExtResource( 2 )
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.2, 0 )
+motion_mirroring = Vector2( 1440, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer4"]
+texture = ExtResource( 5 )
+
 [node name="Player" parent="." instance=ExtResource( 1 )]
+WALK_SPEED = 100
+JUMP_VALUE = 100.0
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
+zoom = Vector2( 0.5, 0.5 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -43,3 +83,13 @@ polygon = PoolVector2Array( -15, 174, -17, 213, 986, 207, 986, 169 )
 
 [node name="Node2D2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 3116, -400 )
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+layer = 1
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+motion_scale = Vector2( 2, 0 )
+motion_mirroring = Vector2( 1440, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+texture = ExtResource( 8 )
