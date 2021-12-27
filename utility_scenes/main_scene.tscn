@@ -111,11 +111,11 @@ position = Vector2( 2749, -406 )
 [node name="start" type="Node2D" parent="."]
 
 [node name="Sprite" type="Sprite" parent="start"]
-position = Vector2( 2948, -604 )
+position = Vector2( 2963, -604 )
 scale = Vector2( 0.35, 0.35 )
 texture = ExtResource( 6 )
 
 [node name="Sprite2" type="Sprite" parent="start"]
-position = Vector2( 2953, -542 )
+position = Vector2( 2968, -542 )
 scale = Vector2( 0.35, 0.35 )
 texture = ExtResource( 11 )

@@ -111,15 +111,18 @@ tracks/1/keys = {
 }
 
 [node name="Player" type="KinematicBody2D"]
+modulate = Color( 0.0666667, 0.0862745, 0.545098, 1 )
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource( 1 )
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 enabled = true
 
 [node name="player_detection_range" type="Area2D" parent="."]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player_detection_range"]
 shape = SubResource( 2 )

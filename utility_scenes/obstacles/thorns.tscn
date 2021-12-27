@@ -11,6 +11,7 @@ extents = Vector2( 54.5, 45 )
 script = ExtResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 1, 1, 2.7, 1 )
 position = Vector2( 0, -48 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
@@ -19,6 +20,7 @@ texture = ExtResource( 2 )
 position = Vector2( -1, 50 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
 position = Vector2( 4.5, -95 )
 shape = SubResource( 1 )
 

@@ -4,7 +4,7 @@ extends Node
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-var thread
+#var thread
 const test_set1 = preload("res://set_scenes/forest_set.tscn")
 const test_set2 = preload("res://set_scenes/swing_set.tscn")
 # Called when the node enters the scene tree for the first time.
@@ -13,8 +13,9 @@ func _ready():
 	pass # Replace with function body.
 
 func trigger_generation(p_position):
-	thread = Thread.new()
-	thread.start(self, "load_set_scene", p_position)
+	#thread = Thread.new()
+	#thread.start(self, "load_set_scene", p_position)
+	call_deferred("load_set_scene", p_position)
 
 func load_set_scene(p_position):
 	
