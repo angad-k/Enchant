@@ -19,6 +19,10 @@ Const="*res://scripts/const.gd"
 Generator="*res://scripts/generator.gd"
 GameState="*res://scripts/game_state.gd"
 
+[display]
+
+window/size/resizable=false
+
 [physics]
 
 common/enable_pause_aware_picking=true

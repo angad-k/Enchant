@@ -60,7 +60,8 @@ func trigger_death(obstacle_val):
 	GameState.state = GameState.DEAD
 	$Particles2D.emitting = true
 	$AnimatedSprite.visible = false
-	
+	GameState.die()
+
 
 func _on_player_detection_range_body_entered(body):
 	if(body.has_method("trigger_generation")):

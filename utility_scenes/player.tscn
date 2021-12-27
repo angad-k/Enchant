@@ -145,5 +145,7 @@ playing = true
 
 [node name="Particles2D" parent="." instance=ExtResource( 3 )]
 
+[node name="Timer" type="Timer" parent="."]
+
 [connection signal="body_entered" from="player_detection_range" to="." method="_on_player_detection_range_body_entered"]
 [connection signal="body_exited" from="player_detection_range" to="." method="_on_player_detection_range_body_exited"]
