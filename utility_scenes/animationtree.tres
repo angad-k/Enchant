@@ -1,0 +1,28 @@
+[gd_resource type="AnimationNodeStateMachine" load_steps=7 format=2]
+
+[sub_resource type="AnimationNodeAnimation" id=43]
+animation = "jump_to_run"
+
+[sub_resource type="AnimationNodeAnimation" id=4]
+animation = "run"
+
+[sub_resource type="AnimationNodeAnimation" id=44]
+animation = "run_to_jump"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=45]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=46]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=47]
+switch_mode = 2
+
+[resource]
+states/jump_to_run/node = SubResource( 43 )
+states/jump_to_run/position = Vector2( 343, 194 )
+states/run/node = SubResource( 4 )
+states/run/position = Vector2( 219, 91 )
+states/run_to_jump/node = SubResource( 44 )
+states/run_to_jump/position = Vector2( 413, 71 )
+transitions = [ "run", "run_to_jump", SubResource( 45 ), "run_to_jump", "jump_to_run", SubResource( 46 ), "jump_to_run", "run", SubResource( 47 ) ]
