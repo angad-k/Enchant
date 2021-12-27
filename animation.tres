@@ -1,7 +1,7 @@
 [gd_resource type="Animation" format=2]
 
 [resource]
-length = 0.001
+resource_name = "run_to_jump"
 tracks/0/type = "value"
 tracks/0/path = NodePath("../AnimatedSprite:animation")
 tracks/0/interp = 1
@@ -11,11 +11,11 @@ tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
-"update": 0,
+"update": 1,
 "values": [ "run_to_jump" ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("../AnimatedSprite:frame")
+tracks/1/path = NodePath("../AnimatedSprite:scale")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -24,5 +24,5 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0 ]
+"values": [ Vector2( 0.2, 0.2 ) ]
 }

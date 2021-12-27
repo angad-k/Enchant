@@ -9,6 +9,7 @@ export var WALK_SPEED = 200
 export var JUMP_VALUE = 300.0
 var velocity = Vector2()
 var onground = true
+var ongroundchanged = false
 var stumble_cooldown = 0.0
 onready var state_machine = $AnimationTree["parameters/playback"]
 # Called when the node enters the scene tree for the first time.
@@ -19,7 +20,10 @@ func _physics_process(delta):
 	if(GameState.state == GameState.STARTED):
 		velocity.y += delta * GRAVITY
 		velocity.x =  WALK_SPEED
+		var initial = onground
 		onground= $RayCast2D.is_colliding()
+		if(initial != onground):
+			ongroundchanged = true
 		if(onground):
 			velocity.y = 0
 		if Input.is_action_pressed("ui_left") && onground:
@@ -34,6 +38,13 @@ func _process(delta):
 	stumble_cooldown -= delta
 	if(stumble_cooldown < 0):
 		stumble_cooldown = 0
+	if(ongroundchanged):
+		if(onground):
+			print("reached")
+			state_machine.travel("run_to_jump")
+		else:
+			state_machine.travel("run")
+		ongroundchanged = false
 
 func hit(obstacle_val):
 	if(obstacle_val == Const.OBSTACLES.THORNS || obstacle_val == Const.OBSTACLES.LOGS):
