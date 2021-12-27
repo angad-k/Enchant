@@ -60,8 +60,8 @@ script = ExtResource( 7 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 2737, -499 )
-GRAVITY = 600.0
-JUMP_VALUE = 400.0
+GRAVITY = 800.0
+JUMP_VALUE = 550.0
 
 [node name="initial_set" parent="." instance=ExtResource( 4 )]
 position = Vector2( 2749, -406 )
