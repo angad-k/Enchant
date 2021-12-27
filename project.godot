@@ -17,6 +17,7 @@ config/icon="res://icon.png"
 
 Const="*res://scripts/const.gd"
 Generator="*res://scripts/generator.gd"
+GameState="*res://scripts/game_state.gd"
 
 [physics]
 
