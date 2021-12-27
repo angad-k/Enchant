@@ -34,8 +34,8 @@ position = Vector2( 2923, -2 )
 position = Vector2( 630, -171 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing"]
-position = Vector2( -1.784, -287.196 )
-scale = Vector2( 0.444, 0.444 )
+position = Vector2( 3.05176e-05, -550 )
+scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="swings/swing"]
@@ -46,8 +46,8 @@ shape = SubResource( 2 )
 position = Vector2( 938, -172 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing2"]
-position = Vector2( -0.783997, -286.598 )
-scale = Vector2( 0.444, 0.444865 )
+position = Vector2( 2, -551 )
+scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="swings/swing2"]
@@ -58,8 +58,8 @@ shape = SubResource( 2 )
 position = Vector2( 1246, -173 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing3"]
-position = Vector2( 0.216003, -286.598 )
-scale = Vector2( 0.444, 0.444865 )
+position = Vector2( 2.00006, -550 )
+scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="swings/swing3"]
@@ -70,8 +70,8 @@ shape = SubResource( 2 )
 position = Vector2( 1552, -173 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing4"]
-position = Vector2( 0.216003, -285.598 )
-scale = Vector2( 0.444, 0.444865 )
+position = Vector2( 6.10352e-05, -551 )
+scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="swings/swing4"]
@@ -82,8 +82,8 @@ shape = SubResource( 2 )
 position = Vector2( 1857, -173 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing5"]
-position = Vector2( 1.21606, -285.598 )
-scale = Vector2( 0.444, 0.444865 )
+position = Vector2( 3, -550 )
+scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="swings/swing5"]
@@ -94,8 +94,8 @@ shape = SubResource( 2 )
 position = Vector2( 2162, -169 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing6"]
-position = Vector2( -0.783936, -286.598 )
-scale = Vector2( 0.444, 0.444865 )
+position = Vector2( 1, -551 )
+scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="swings/swing6"]
@@ -106,8 +106,8 @@ shape = SubResource( 2 )
 position = Vector2( 2456, -165 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing7"]
-position = Vector2( 0.216064, -286.598 )
-scale = Vector2( 0.444, 0.444865 )
+position = Vector2( 1, -551 )
+scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="swings/swing7"]
@@ -118,8 +118,8 @@ shape = SubResource( 2 )
 position = Vector2( 2769, -159 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing8"]
-position = Vector2( -0.783936, -286.598 )
-scale = Vector2( 0.444, 0.444865 )
+position = Vector2( 0, -550 )
+scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="swings/swing8"]
