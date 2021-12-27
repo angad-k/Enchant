@@ -30,6 +30,7 @@ func _physics_process(delta):
 func _process(delta):
 	if Input.is_action_pressed("ui_select"):
 		GameState.start_game()
+		state_machine.start("run")
 	stumble_cooldown -= delta
 	if(stumble_cooldown < 0):
 		stumble_cooldown = 0
