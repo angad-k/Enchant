@@ -1,13 +1,15 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://utility_scenes/up_ramp.tscn" type="PackedScene" id=1]
 [ext_resource path="res://utility_scenes/down_ramp.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/images/Swing.png" type="Texture" id=3]
 [ext_resource path="res://scripts/swing_set.gd" type="Script" id=4]
 [ext_resource path="res://utility_scenes/end_pointer.tscn" type="PackedScene" id=5]
+[ext_resource path="res://utility_scenes/obstacles/thorns.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/images/Ground.png" type="Texture" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 1693, 10 )
+extents = Vector2( 1694, 4 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 112.625, 10 )
@@ -18,7 +20,7 @@ script = ExtResource( 4 )
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 1693, -10 )
+position = Vector2( 1694, 2 )
 shape = SubResource( 1 )
 
 [node name="StaticBody2D2" parent="." instance=ExtResource( 1 )]
@@ -126,3 +128,84 @@ shape = SubResource( 2 )
 
 [node name="endpointer" parent="." instance=ExtResource( 5 )]
 position = Vector2( 3388, -2 )
+
+[node name="spikes" type="Node2D" parent="."]
+
+[node name="Thorns" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 506, -9 )
+
+[node name="Thorns2" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 619, -9 )
+
+[node name="Thorns3" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 732, -9 )
+
+[node name="Thorns4" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 845, -9 )
+
+[node name="Thorns5" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 938, -9 )
+
+[node name="Thorns6" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 1060, -9 )
+
+[node name="Thorns7" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 1182, -12 )
+
+[node name="Thorns8" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 1295, -11 )
+
+[node name="Thorns9" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 1399, -10 )
+
+[node name="Thorns10" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 1505, -8 )
+
+[node name="Thorns11" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 1611, -12 )
+
+[node name="Thorns12" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 1720, -11 )
+
+[node name="Thorns13" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 1823, -10 )
+
+[node name="Thorns14" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 1936, -11 )
+
+[node name="Thorns15" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 2046, -5 )
+
+[node name="Thorns16" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 2156, -8 )
+
+[node name="Thorns17" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 2269, -5 )
+
+[node name="Thorns18" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 2379, -13 )
+
+[node name="Thorns19" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 2486, -5 )
+
+[node name="Thorns20" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 2588, -10 )
+
+[node name="Thorns21" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 2690, -13 )
+
+[node name="Thorns22" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 2800, -10 )
+
+[node name="Thorns23" parent="spikes" instance=ExtResource( 6 )]
+position = Vector2( 2888, -10 )
+
+[node name="grass" type="Node2D" parent="."]
+position = Vector2( 0, 3 )
+
+[node name="Sprite" type="Sprite" parent="grass"]
+position = Vector2( 1708, -11 )
+scale = Vector2( 0.15, 0.15 )
+texture = ExtResource( 7 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 24000, 100 )

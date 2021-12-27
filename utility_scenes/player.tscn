@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://utility_scenes/player.gd" type="Script" id=1]
 [ext_resource path="res://utility_scenes/spriteframes.tres" type="SpriteFrames" id=2]
+[ext_resource path="res://utility_scenes/explosion.tscn" type="PackedScene" id=3]
 [ext_resource path="res://animation.tres" type="Animation" id=5]
 [ext_resource path="res://utility_scenes/animationtree.tres" type="AnimationNodeStateMachine" id=6]
 
@@ -141,6 +142,8 @@ scale = Vector2( 0.5, 0.5 )
 frames = ExtResource( 2 )
 animation = "run_to_jump"
 playing = true
+
+[node name="Particles2D" parent="." instance=ExtResource( 3 )]
 
 [connection signal="body_entered" from="player_detection_range" to="." method="_on_player_detection_range_body_entered"]
 [connection signal="body_exited" from="player_detection_range" to="." method="_on_player_detection_range_body_exited"]

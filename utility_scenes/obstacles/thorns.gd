@@ -19,6 +19,6 @@ func _ready():
 func _on_Area2D_body_entered(body):
 	if body.has_method("hit") :
 		body.hit(obstacle_val)
-		$Particles2D.emitting = true
-		$Sprite.queue_free()
+		#$Particles2D.emitting = true
+		#$Sprite.queue_free()
 	pass # Replace with function body.

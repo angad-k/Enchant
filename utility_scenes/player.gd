@@ -45,17 +45,21 @@ func _process(delta):
 		ongroundchanged = false
 
 func hit(obstacle_val):
-	if(obstacle_val == Const.OBSTACLES.THORNS || obstacle_val == Const.OBSTACLES.LOGS):
+	if(obstacle_val == Const.OBSTACLES.LOGS):
 		if(stumble_cooldown != 0):
 			trigger_death(obstacle_val)
 		else:
 			stumble_cooldown = 10
+	if(obstacle_val == Const.OBSTACLES.THORNS || obstacle_val == Const.OBSTACLES.STUMP):
+		trigger_death(obstacle_val)
 		
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
 func trigger_death(obstacle_val):
 	GameState.state = GameState.DEAD
+	$Particles2D.emitting = true
+	$AnimatedSprite.visible = false
 	
 
 func _on_player_detection_range_body_entered(body):

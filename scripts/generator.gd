@@ -9,6 +9,7 @@ const test_set1 = preload("res://set_scenes/forest_set.tscn")
 const test_set2 = preload("res://set_scenes/swing_set.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	randomize()
 	pass # Replace with function body.
 
 func trigger_generation(p_position):

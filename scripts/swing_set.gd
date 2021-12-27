@@ -14,7 +14,11 @@ func _ready():
 			arr.append(false)
 	var count = 0
 	for swing in $swings.get_children():
-		swing.position.y = swing.position.y + randf()*300 - 150
+		if(count != 0):
+			swing.position.y = swing.position.y + randf()*125 - 125
+		else:
+			swing.position.y = swing.position.y - 125
+			count += 1 
 		swing.scale.x = randf()/2 + 0.5
 	pass # Replace with function body.
 
