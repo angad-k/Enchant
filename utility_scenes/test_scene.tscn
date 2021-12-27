@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://utility_scenes/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/images/background0.png" type="Texture" id=2]
+[ext_resource path="res://assets/images/background2.png" type="Texture" id=3]
 [ext_resource path="res://set_scenes/initial_set.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/images/Moon.png" type="Texture" id=5]
 [ext_resource path="res://assets/images/background1.png" type="Texture" id=6]
@@ -12,16 +13,16 @@
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2( 8032, -18 )
+position = Vector2( 6282, -85 )
 motion_scale = Vector2( 0.2, 1 )
-motion_mirroring = Vector2( 9716, 0 )
+motion_mirroring = Vector2( 7085, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2( -60, -933 )
 texture = ExtResource( 2 )
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2( 2351, -565 )
+position = Vector2( 2604, -580 )
 motion_scale = Vector2( 0, 1 )
 motion_mirroring = Vector2( 1440, 0 )
 
@@ -31,10 +32,20 @@ scale = Vector2( 0.5, 0.5 )
 z_index = 2
 texture = ExtResource( 5 )
 
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2( 1102, -113 )
+scale = Vector2( 0.7, 0.7 )
+motion_scale = Vector2( 0.1, 1 )
+motion_mirroring = Vector2( 4147, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer4"]
+position = Vector2( 5175, -673 )
+texture = ExtResource( 3 )
+
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2( 5398, -570 )
 motion_scale = Vector2( 0.3, 1 )
-motion_mirroring = Vector2( 4549, 0 )
+motion_mirroring = Vector2( 4565, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
 texture = ExtResource( 6 )
