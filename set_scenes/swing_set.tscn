@@ -34,7 +34,7 @@ position = Vector2( 2923, -2 )
 position = Vector2( 630, -171 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing"]
-position = Vector2( 3.05176e-05, -550 )
+position = Vector2( 0.199982, -552.65 )
 scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 3 )
 
@@ -46,7 +46,7 @@ shape = SubResource( 2 )
 position = Vector2( 938, -172 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing2"]
-position = Vector2( 2, -551 )
+position = Vector2( 2.19995, -553.65 )
 scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 3 )
 
@@ -58,7 +58,7 @@ shape = SubResource( 2 )
 position = Vector2( 1246, -173 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing3"]
-position = Vector2( 2.00006, -550 )
+position = Vector2( 2.20001, -552.65 )
 scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 3 )
 
@@ -70,7 +70,7 @@ shape = SubResource( 2 )
 position = Vector2( 1552, -173 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing4"]
-position = Vector2( 6.10352e-05, -551 )
+position = Vector2( 0.200012, -553.65 )
 scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 3 )
 
@@ -82,7 +82,7 @@ shape = SubResource( 2 )
 position = Vector2( 1857, -173 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing5"]
-position = Vector2( 3, -550 )
+position = Vector2( 3.19995, -552.65 )
 scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 3 )
 
@@ -94,7 +94,7 @@ shape = SubResource( 2 )
 position = Vector2( 2162, -169 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing6"]
-position = Vector2( 1, -551 )
+position = Vector2( 1.19995, -553.65 )
 scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 3 )
 
@@ -106,7 +106,7 @@ shape = SubResource( 2 )
 position = Vector2( 2456, -165 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing7"]
-position = Vector2( 1, -551 )
+position = Vector2( 1.19995, -553.65 )
 scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 3 )
 
@@ -118,7 +118,7 @@ shape = SubResource( 2 )
 position = Vector2( 2769, -159 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing8"]
-position = Vector2( 0, -550 )
+position = Vector2( 0.199951, -552.65 )
 scale = Vector2( 1.7, 1.7 )
 texture = ExtResource( 3 )
 

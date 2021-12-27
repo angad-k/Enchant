@@ -5,7 +5,7 @@
 [node name="StaticBody2D" type="StaticBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 231.5, -84 )
+position = Vector2( 231, -88 )
 scale = Vector2( 1.71923, 1.70526 )
 texture = ExtResource( 1 )
 

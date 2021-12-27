@@ -28,6 +28,20 @@ position = Vector2( 505, -20 )
 [node name="spawn_point11" type="Node2D" parent="obstacle_spawn_points"]
 position = Vector2( 823, -18 )
 
+[node name="tree_spawn_points" type="Node2D" parent="."]
+
+[node name="spawn_point" type="Node2D" parent="tree_spawn_points"]
+position = Vector2( 89, -1 )
+
+[node name="spawn_point2" type="Node2D" parent="tree_spawn_points"]
+position = Vector2( 353, 1 )
+
+[node name="spawn_point3" type="Node2D" parent="tree_spawn_points"]
+position = Vector2( 665, 0 )
+
+[node name="spawn_point4" type="Node2D" parent="tree_spawn_points"]
+position = Vector2( 906, -2 )
+
 [node name="endpointer" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1024, 0 )
 
