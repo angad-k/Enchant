@@ -28,6 +28,7 @@ func _physics_process(delta):
 			velocity.y = 0
 		if Input.is_action_pressed("ui_left") && onground:
 			velocity.y = -JUMP_VALUE
+			state_machine.start("run_to_jump")
 
 		move_and_slide(velocity, Vector2(0, -1))
 
@@ -39,10 +40,7 @@ func _process(delta):
 	if(stumble_cooldown < 0):
 		stumble_cooldown = 0
 	if(ongroundchanged):
-		if(onground):
-			print("reached")
-			state_machine.travel("run_to_jump")
-		else:
+		if(!onground):
 			state_machine.travel("run")
 		ongroundchanged = false
 
