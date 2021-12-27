@@ -29,97 +29,99 @@ position = Vector2( 2923, -2 )
 [node name="swings" type="Node2D" parent="."]
 
 [node name="swing" type="StaticBody2D" parent="swings"]
+position = Vector2( 630, -171 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing"]
-position = Vector2( 646, -458 )
+position = Vector2( -1.784, -287.196 )
 scale = Vector2( 0.444, 0.444 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="swings/swing"]
-position = Vector2( 646.375, -171 )
+position = Vector2( -1.409, -0.195984 )
 shape = SubResource( 2 )
 
 [node name="swing2" type="StaticBody2D" parent="swings"]
+position = Vector2( 938, -172 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing2"]
-position = Vector2( 939.216, -459.598 )
+position = Vector2( -0.783997, -286.598 )
 scale = Vector2( 0.444, 0.444865 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="swings/swing2"]
-position = Vector2( 939.591, -173.196 )
+position = Vector2( -0.408997, -0.196289 )
 shape = SubResource( 2 )
 
 [node name="swing3" type="StaticBody2D" parent="swings"]
-position = Vector2( 314, 0 )
+position = Vector2( 1246, -173 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing3"]
-position = Vector2( 939.216, -459.598 )
+position = Vector2( 0.216003, -286.598 )
 scale = Vector2( 0.444, 0.444865 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="swings/swing3"]
-position = Vector2( 939.591, -173.196 )
+position = Vector2( 0.591003, -0.196289 )
 shape = SubResource( 2 )
 
 [node name="swing4" type="StaticBody2D" parent="swings"]
-position = Vector2( 644, -2 )
+position = Vector2( 1552, -173 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing4"]
-position = Vector2( 939.216, -459.598 )
+position = Vector2( 0.216003, -285.598 )
 scale = Vector2( 0.444, 0.444865 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="swings/swing4"]
-position = Vector2( 939.591, -173.196 )
+position = Vector2( 0.591003, 0.803711 )
 shape = SubResource( 2 )
 
 [node name="swing5" type="StaticBody2D" parent="swings"]
-position = Vector2( 940, -3 )
+position = Vector2( 1857, -173 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing5"]
-position = Vector2( 939.216, -459.598 )
+position = Vector2( 1.21606, -285.598 )
 scale = Vector2( 0.444, 0.444865 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="swings/swing5"]
-position = Vector2( 939.591, -173.196 )
+position = Vector2( 1.591, 0.803711 )
 shape = SubResource( 2 )
 
 [node name="swing6" type="StaticBody2D" parent="swings"]
-position = Vector2( 1232, -3 )
+position = Vector2( 2162, -169 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing6"]
-position = Vector2( 939.216, -459.598 )
+position = Vector2( -0.783936, -286.598 )
 scale = Vector2( 0.444, 0.444865 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="swings/swing6"]
-position = Vector2( 939.591, -173.196 )
+position = Vector2( -0.408997, -0.196289 )
 shape = SubResource( 2 )
 
 [node name="swing7" type="StaticBody2D" parent="swings"]
-position = Vector2( 1541, -1 )
+position = Vector2( 2456, -165 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing7"]
-position = Vector2( 939.216, -459.598 )
+position = Vector2( 0.216064, -286.598 )
 scale = Vector2( 0.444, 0.444865 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="swings/swing7"]
-position = Vector2( 939.591, -173.196 )
+position = Vector2( 0.591003, -0.196289 )
 shape = SubResource( 2 )
 
 [node name="swing8" type="StaticBody2D" parent="swings"]
-position = Vector2( 1831, -1 )
+position = Vector2( 2769, -159 )
 
 [node name="Sprite" type="Sprite" parent="swings/swing8"]
-position = Vector2( 939.216, -459.598 )
+position = Vector2( -0.783936, -286.598 )
 scale = Vector2( 0.444, 0.444865 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="swings/swing8"]
-position = Vector2( 939.591, -173.196 )
+position = Vector2( -0.408997, -0.196289 )
 shape = SubResource( 2 )
 
 [node name="endpointer" parent="." instance=ExtResource( 5 )]
