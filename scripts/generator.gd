@@ -20,7 +20,7 @@ func trigger_generation(p_position):
 func load_set_scene(p_position):
 	
 	var x
-	if(randf()<0.5):
+	if(randf()<0.8):
 		x = test_set1.instance()
 	else:
 		x = test_set2.instance()
