@@ -37,3 +37,18 @@ scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 3500, 100 )
+
+[node name="tree_spawn_points" type="Node2D" parent="."]
+position = Vector2( -1, 1 )
+
+[node name="spawn_point" type="Node2D" parent="tree_spawn_points"]
+position = Vector2( 79, -8 )
+
+[node name="spawn_point2" type="Node2D" parent="tree_spawn_points"]
+position = Vector2( 321, -8 )
+
+[node name="spawn_point3" type="Node2D" parent="tree_spawn_points"]
+position = Vector2( 647, -14 )
+
+[node name="spawn_point4" type="Node2D" parent="tree_spawn_points"]
+position = Vector2( 927, -10 )
