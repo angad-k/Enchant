@@ -15,9 +15,6 @@ script = ExtResource( 1 )
 position = Vector2( 512, -10 )
 shape = SubResource( 1 )
 
-[node name="Polygon2D" type="Polygon2D" parent="."]
-polygon = PoolVector2Array( 0, -20, 0, 0, 1024, 0, 1024, -20 )
-
 [node name="obstacle_spawn_points" type="Node2D" parent="."]
 
 [node name="spawn_point" type="Node2D" parent="obstacle_spawn_points"]
