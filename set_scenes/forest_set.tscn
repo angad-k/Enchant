@@ -33,7 +33,7 @@ position = Vector2( 1024, 0 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 515, -8 )
-scale = Vector2( 0.15, 0.15 )
+scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 3 )
 region_enabled = true
-region_rect = Rect2( 0, 0, 7000, 100 )
+region_rect = Rect2( 0, 0, 3500, 100 )

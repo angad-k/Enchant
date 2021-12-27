@@ -26,14 +26,14 @@ func _physics_process(delta):
 			ongroundchanged = true
 		if(onground):
 			velocity.y = 0
-		if Input.is_action_pressed("ui_left") && onground:
+		if Input.is_action_pressed("ui_select") && onground:
 			velocity.y = -JUMP_VALUE
 			state_machine.start("run_to_jump")
 
 		move_and_slide(velocity, Vector2(0, -1))
 
 func _process(delta):
-	if Input.is_action_pressed("ui_select"):
+	if Input.is_action_pressed("ui_select") && GameState.state == GameState.MAIN_MENU:
 		GameState.start_game()
 		state_machine.start("run")
 	stumble_cooldown -= delta

@@ -13,6 +13,9 @@ func _ready():
 func _physics_process(delta):
 	if(GameState.state == GameState.STARTED):
 		position.x = lerp(position.x, player.position.x, 0.085)
+		position.y = lerp(position.y, -663, 0.0085)
+		zoom.x = lerp(zoom.x, 0.85, 0.0085)
+		zoom.y = lerp(zoom.y, 0.85, 0.0085)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
