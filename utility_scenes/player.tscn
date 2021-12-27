@@ -126,6 +126,7 @@ shape = SubResource( 2 )
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = ExtResource( 6 )
 anim_player = NodePath("AnimationPlayer")
+active = true
 process_mode = 0
 parameters/playback = SubResource( 6 )
 
