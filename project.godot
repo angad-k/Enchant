@@ -10,19 +10,24 @@ config_version=4
 
 [application]
 
-config/name="Endless Runner"
+config/name="Enchant"
 run/main_scene="res://utility_scenes/main_scene.tscn"
-config/icon="res://icon.png"
+config/icon="res://assets/images/Icon.png"
 
 [autoload]
 
-Const="*res://scripts/const.gd"
-Generator="*res://scripts/generator.gd"
-GameState="*res://scripts/game_state.gd"
+Const="*res://singletons/const.gd"
+Generator="*res://singletons/generator.gd"
+GameState="*res://singletons/game_state.gd"
+Swipe="*res://singletons/swipe.gd"
 
 [display]
 
-window/size/resizable=false
+window/size/fullscreen=true
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
 
 [physics]
 

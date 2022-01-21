@@ -49,8 +49,12 @@ func _process(delta):
 		score += delta
 	if(GameState.state == DEAD):
 		if(Input.is_action_pressed("ui_select")):
-			get_tree().change_scene("res://utility_scenes/main_scene.tscn")
-			GameState.state = MAIN_MENU
+			restart()
+
+func restart():
+	score = 0
+	get_tree().change_scene("res://utility_scenes/main_scene.tscn")
+	GameState.state = MAIN_MENU
 
 func die():
 	if(score > high_score):
