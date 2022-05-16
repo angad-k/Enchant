@@ -50,6 +50,8 @@ func _physics_process(delta):
 		if (Input.is_action_pressed("ui_select") || swiped_up) && onground:
 			velocity.y = -JUMP_VALUE
 			state_machine.start("run_to_jump")
+			$jump.play()
+			$run.stream_paused = true
 		if(swiped_up):
 				swiped_up = false
 
@@ -59,21 +61,26 @@ func _process(delta):
 	if Input.is_action_pressed("ui_select") && GameState.state == GameState.MAIN_MENU:
 		GameState.start_game()
 		state_machine.start("run")
+		$run.play()
 	stumble_cooldown -= delta
 	if(stumble_cooldown < 0):
 		stumble_cooldown = 0
 	if(ongroundchanged):
 		if(onground):
 			state_machine.start("run")
+			$run.stream_paused = false
 		ongroundchanged = false
 
 func hit(obstacle_val):
 	if(obstacle_val == Const.OBSTACLES.LOGS):
 		if(stumble_cooldown != 0):
+			$hit.play()
 			trigger_death(obstacle_val)
 		else:
 			stumble_cooldown = 10
+			$hit.play()
 	if(obstacle_val == Const.OBSTACLES.THORNS || obstacle_val == Const.OBSTACLES.STUMP):
+		$hit.play()
 		trigger_death(obstacle_val)
 		
 # Called every frame. 'delta' is the elapsed time since the previous frame.

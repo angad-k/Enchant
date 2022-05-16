@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://assets/fonts/Poppins-Medium.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://utility_scenes/highscore.gd" type="Script" id=2]
@@ -12,6 +12,10 @@
 [ext_resource path="res://assets/images/background0.png" type="Texture" id=10]
 [ext_resource path="res://assets/images/space.png" type="Texture" id=11]
 [ext_resource path="res://utility_scenes/main_scene.gd" type="Script" id=12]
+[ext_resource path="res://assets/music/ambience.wav" type="AudioStream" id=13]
+[ext_resource path="res://assets/music/jump.wav" type="AudioStream" id=14]
+[ext_resource path="res://assets/music/running.wav" type="AudioStream" id=15]
+[ext_resource path="res://assets/music/hit.wav" type="AudioStream" id=16]
 
 [sub_resource type="DynamicFont" id=1]
 size = 22
@@ -106,6 +110,23 @@ __meta__ = {
 position = Vector2( 2737, -499 )
 GRAVITY = 800.0
 JUMP_VALUE = 550.0
+
+[node name="ambience" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 13 )
+autoplay = true
+
+[node name="jump" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 14 )
+volume_db = -17.0
+pitch_scale = 0.82
+
+[node name="run" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 15 )
+volume_db = -10.0
+
+[node name="hit" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource( 16 )
+pitch_scale = 1.15
 
 [node name="initial_set" parent="." instance=ExtResource( 4 )]
 position = Vector2( 2749, -406 )
