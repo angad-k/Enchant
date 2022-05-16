@@ -150,5 +150,5 @@ playing = true
 
 [node name="Timer" type="Timer" parent="."]
 
-[connection signal="body_entered" from="player_detection_range" to="." method="_on_player_detection_range_body_entered"]
-[connection signal="body_exited" from="player_detection_range" to="." method="_on_player_detection_range_body_exited"]
+[connection signal="area_entered" from="player_detection_range" to="." method="_on_player_detection_range_area_entered"]
+[connection signal="area_exited" from="player_detection_range" to="." method="_on_player_detection_range_area_exited"]

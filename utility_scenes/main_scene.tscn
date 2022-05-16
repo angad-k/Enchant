@@ -113,6 +113,7 @@ JUMP_VALUE = 550.0
 
 [node name="ambience" type="AudioStreamPlayer" parent="Player"]
 stream = ExtResource( 13 )
+volume_db = -2.0
 autoplay = true
 
 [node name="jump" type="AudioStreamPlayer" parent="Player"]
@@ -122,7 +123,7 @@ pitch_scale = 0.82
 
 [node name="run" type="AudioStreamPlayer" parent="Player"]
 stream = ExtResource( 15 )
-volume_db = -10.0
+volume_db = -2.0
 
 [node name="hit" type="AudioStreamPlayer" parent="Player"]
 stream = ExtResource( 16 )

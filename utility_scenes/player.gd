@@ -92,20 +92,19 @@ func trigger_death(obstacle_val):
 	$AnimatedSprite.visible = false
 	GameState.die()
 
-
-func _on_player_detection_range_body_entered(body):
-	if(body.has_method("trigger_generation")):
-		body.trigger_generation()
-	pass # Replace with function body.
-
-
-func _on_player_detection_range_body_exited(body):
-	if(body.has_method("trigger_deletion")):
-		body.trigger_deletion()
-	pass # Replace with function body.
-
-
 func _on_start2_pressed():
 	GameState.start_game()
 	state_machine.start("run")
+	pass # Replace with function body.
+
+
+func _on_player_detection_range_area_entered(area):
+	if(area.has_method("trigger_generation")):
+		area.trigger_generation()
+	pass # Replace with function body.
+
+
+func _on_player_detection_range_area_exited(area):
+	if(area.has_method("trigger_deletion")):
+		area.trigger_deletion()
 	pass # Replace with function body.
